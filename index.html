@@ -1,16 +1,1 @@
-<html ng-app="listaTelefonica">
-<head>
-	<title>Lista Telefonica</title>
-	<link rel="stylesheet" type="text/css" href="lib/bootstrap/css/bootstrap.css">
-	<script src="lib/angular/angular.js"></script>
-	<script>
-		angular.module("listaTelefonica", []);
-		angular.module("listaTelefonica").controller("listaTelefonicaCtrl", function($scope){
-
-		});
-	</script>
-</head>
-<body ng-controller="listaTelefonicaCtrl">
-
-</body>
-</html>
+<html ng-app="listaTelefonica"><head>	<title>Lista Telefonica</title>	<link rel="stylesheet" type="text/css" href="lib/bootstrap/css/bootstrap.css">	<style>		.jumbotron{			width: 400px;			text-align: center;			margin-top: 20px;			margin-left: auto;			margin-right: auto;		}	</style>	<script src="lib/angular/angular.js"></script>	<script>		angular.module("listaTelefonica", []);		angular.module("listaTelefonica").controller("listaTelefonicaCtrl", function($scope){			$scope.app = "Lista Telefonica"		});	</script></head><body ng-controller="listaTelefonicaCtrl">	<div class="jumbotron">		<!-- <h4 ng-bing="app"></h4> pode ser assim tbm  -->		<h4> {{app}} </h4> 	</div></body></html>
